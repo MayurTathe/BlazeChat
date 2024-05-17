@@ -1,0 +1,100 @@
+.detail {
+    flex: 1;
+    height: 100%;
+    overflow-y: scroll;
+
+    .user {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+        border-bottom: 1px solid #4a4852b5;
+        align-items: center;
+
+        img {
+            width: 75px;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    .info {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .option {
+            .title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    background-color: #3b467c57;
+                    padding: 10px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+            }
+        
+
+        .photos {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+
+            .photoItem {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .photoDetail {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    .media {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 5px;
+                        object-fit: cover;
+                    }
+                    span{
+                        font-size: 14px;
+                        color: lightgrey;
+                        font-weight: 300;
+                    }
+                }
+
+                .icon{
+                    width: 30px;
+                    height: 30px;
+                    background-color: #3b467c57;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+        button{
+            padding: 10px 20px;
+            color: white;
+            border: none;
+            background-color: rgba(255, 0, 0, 0.574);
+            border-radius: 5px;
+            cursor: pointer;    
+
+            &:hover{
+                background-color: rgba(255, 0, 0, 0.759);
+            }
+        }
+
+    }
+}   
